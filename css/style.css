@@ -1,0 +1,35 @@
+.section1{
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.sec1-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.sec1-aside{
+    color: #404040;
+}
+
+.sec1-aside-top{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sec1-aside-mid{
+    font-size: 80px;
+    font-weight: 800;
+    margin: 35px 0;
+}
+
+.my-img{
+    height: 297px;
+    float: right;
+    margin: 0 150px 0;
+}
