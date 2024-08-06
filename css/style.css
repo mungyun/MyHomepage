@@ -37,7 +37,6 @@
 .my-img {
   height: 297px;
   float: right;
-  margin: 0 150px 0;
   border-radius: 24px;
 }
 * {
@@ -170,10 +169,54 @@ nav {
   background-color: #808080;
 }
 
+.studyImg-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.sec1-article {
+  font-weight: 800;
+}
+
+.sec1-article-top {
+  font-size: 20px;
+}
+
+.sec1-article-title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.sec1-article-mid {
+  font-size: 25px;
+}
+
+.sec1-article-bot {
+  color: rgb(93, 114, 128);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sec2-container {
+  text-align: right;
+}
+
 @media (min-width: 375px) {
   .container {
     width: 375px;
     margin: 0 auto;
+  }
+
+  .my-img {
+    margin: 0;
   }
 
   .sec-container {
@@ -225,6 +268,10 @@ nav {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .my-img {
+    margin: 0 150px 0;
   }
 
   .sec-container {
