@@ -62,6 +62,12 @@ header {
   background-color: #fff;
 }
 
+#About,
+#Service,
+#Contact {
+  padding: 120px 0;
+}
+
 .sub-title {
   font-size: 24px;
   text-align: center;
@@ -70,7 +76,6 @@ header {
 .main-title {
   font-size: 70px;
   margin-top: 10px;
-  margin-bottom: 0;
   text-align: center;
 }
 
@@ -102,7 +107,6 @@ nav {
 .service-container,
 .contact-container {
   display: flex;
-  padding-top: 120px;
   align-self: center;
   justify-content: center;
   flex-direction: column;
@@ -112,8 +116,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 90px;
-  padding: 100px 0;
 }
 
 .article-title {
@@ -142,8 +144,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
-  gap: 50px;
 }
 
 .site-section {
@@ -161,7 +161,7 @@ nav {
 }
 
 .site-text {
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -201,12 +201,61 @@ nav {
 
 .sec1-article-bot {
   color: rgb(93, 114, 128);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
+}
+
+.sec1-article-bot > li {
+  list-style-type: none;
 }
 
 .sec2-container {
   text-align: right;
+}
+
+.sec1-article {
+  font-weight: 800;
+}
+
+.sec1-article-top {
+  font-size: 20px;
+}
+
+.sec1-article-title {
+  font-size: 40px;
+  margin: 0 0 40px;
+}
+
+.info {
+  display: grid;
+}
+
+.info-img {
+  width: 21px;
+  height: 21px;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.info-main {
+  margin: 0;
+  color: rgb(93, 114, 128);
+}
+
+.follow-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  margin: 0 24px 0 0;
 }
 
 @media (min-width: 375px) {
@@ -221,12 +270,15 @@ nav {
 
   .sec-container {
     flex-direction: column;
+    padding: 45px 16px;
+    gap: 60px;
   }
 
   .studyImg-box {
     order: 1;
   }
   .sec1-article {
+    text-align: center;
     order: 2;
   }
 
@@ -254,8 +306,26 @@ nav {
   }
 
   .site-section {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .sec2-article {
+    text-align: center;
+  }
+
+  .info {
+    grid-template: repeat(3, 1fr) / 1fr;
+    gap: 16px;
+  }
+
+  .site-container {
+    padding: 0 16px;
+    gap: 10px;
+  }
+
+  .main-title {
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -276,6 +346,8 @@ nav {
 
   .sec-container {
     flex-direction: row;
+    gap: 90px;
+    padding: 100px 0;
   }
 
   .nav {
@@ -303,6 +375,11 @@ nav {
   }
   .sec1-article {
     order: 1;
+    text-align: left;
+  }
+
+  .sec2-article {
+    text-align: right;
   }
 
   .site-text {
@@ -313,5 +390,19 @@ nav {
     width: 400px;
     height: 400px;
     padding: 50px;
+  }
+
+  .info {
+    gap: 24px;
+    grid-template: 1fr 1fr/1fr 1fr;
+  }
+
+  .site-container {
+    padding-top: 120px;
+    gap: 50px;
+  }
+
+  .main-title {
+    margin-bottom: 0;
   }
 }
