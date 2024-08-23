@@ -203,6 +203,7 @@ nav {
   color: rgb(93, 114, 128);
   font-size: 16px;
   font-weight: 400;
+  padding: 0;
 }
 
 .sec1-article-bot > li {
