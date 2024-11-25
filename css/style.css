@@ -201,13 +201,17 @@ nav {
 
 .sec1-article-bot {
   color: rgb(93, 114, 128);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   padding: 0;
 }
 
 .sec1-article-bot > li {
   list-style-type: none;
+}
+
+.sec1-article-bot > p {
+  color: #000;
 }
 
 .sec2-container {
